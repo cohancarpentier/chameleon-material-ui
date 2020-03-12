@@ -1,0 +1,73 @@
+{
+  "name": "@getgo/chameleon-material-ui",
+  "version": "1.5.5",
+  "description": "Chameleon theme for Material-UI",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "author": "LogMeIn, Inc.",
+  "contributors": [
+    "Cohan Carpentier <cohan.carpentier@logmein.com>"
+  ],
+  "files": [
+    "dist",
+    "storybook-static"
+  ],
+  "prettier": "@getgo/prettier-config",
+  "peerDependencies": {
+    "@getgo/chameleon-ui": "^2.17.1",
+    "@material-ui/core": "4.9.5",
+    "@material-ui/lab": "^4.0.0-alpha.45",
+    "formik": "^2.1.4",
+    "formik-material-ui": "^2.0.0-beta.1",
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "scripts": {
+    "build": "rollup -c && yarn run storybook:build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9009 -s public --docs",
+    "storybook:build": "build-storybook -s public --docs"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "@getgo/chameleon-ui": "^2.17.1",
+    "@getgo/prettier-config": "^1.0.0",
+    "@harelpls/storybook-addon-materialui": "^1.0.2",
+    "@material-ui/core": "4.9.5",
+    "@material-ui/lab": "^4.0.0-alpha.45",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-docs": "^5.3.14",
+    "@storybook/addon-links": "^5.3.14",
+    "@storybook/addons": "^5.3.14",
+    "@storybook/preset-create-react-app": "^2.0.0",
+    "@storybook/react": "^5.3.14",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "formik": "^2.1.4",
+    "formik-material-ui": "^2.0.0-beta.1",
+    "prettier": "^1.19.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.13.0",
+    "react-inlinesvg": "^1.2.0",
+    "react-is": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "rollup": "^1.32.1",
+    "rollup-plugin-inline-svg": "1.1.1",
+    "rollup-plugin-postcss": "2.4.1",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "ts-node": "^8.6.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.4.1"
+  }
+}

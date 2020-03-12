@@ -1,0 +1,11 @@
+.MuiButton-outlinedPrimary:disabled:hover {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0 !important;
+}
